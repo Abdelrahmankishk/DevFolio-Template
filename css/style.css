@@ -505,6 +505,7 @@ body:has(#Blog:target) .BlogLink::before {
 .message .form input:focus,
 .message .form textarea:focus {
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  border-color: #0062d3;
 }
 .message .box .form .button button {
   width: 170;
@@ -573,7 +574,24 @@ body:has(#Blog:target) .BlogLink::before {
   background-color: #0078ff;
   color: #ffffff;
 }
-
+.ContactLine::before {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: var(--icon-color);
+  position: absolute;
+  top: 98px;
+  left: 48px;
+}
+.message .inTouch h2::before {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: var(--icon-color);
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
 /* footer */
 footer {
   background-color: #0062d3;
