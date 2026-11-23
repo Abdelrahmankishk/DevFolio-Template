@@ -41,7 +41,85 @@
 #color {
   color: #212529;
 }
+.navbar .DropDownLink:hover::before {
+  width: 67%;
+}
+.navbar .BlogLink:hover::before {
+  width: 2.5%;
+}
+.navbar .WorkLink:hover::before,
+.navbar ul li .homeLink:hover::before,
+.navbar ul li .AboutLink:hover::before {
+  width: 3%;
+}
+.navbar .ContactLink:hover:before,
+.navbar .ServicesLink:hover:before {
+  width: 4.5%;
+}
+.ContactLink::before,
+.BlogLink::before,
+.WorkLink::before,
+.ServicesLink::before,
+.AboutLink::before,
+.homeLink::before {
+  content: "";
+  width: 0;
+  height: 0.125rem;
+  background-color: var(--white);
+  position: absolute;
+  bottom: 22px;
+  transition: all 0.5s;
+}
+.DropDownLink::before {
+  content: "";
+  /* width: 67%; */
+  width: 0%;
+  height: 2px;
+  background-color: var(--white);
+  position: absolute;
+  top: 37px;
+  transition: all 0.5s;
+}
 
+body:has(#Blog:target) .BlogLink::before,
+body:has(#Work:target) .WorkLink::before,
+body:has(#About-Me:target) .AboutLink::before,
+body:has(#Home:target) .homeLink::before {
+  content: "";
+  width: 3%;
+  height: 0.125rem;
+  background-color: var(--white);
+  position: absolute;
+  bottom: 22px;
+  transition: all 0.5s;
+}
+body:has(#Contact:target) .ContactLink::before,
+body:has(#Services:target) .ServicesLink::before {
+  width: 4.5%;
+}
+body:has(#Blog:target) .BlogLink::before {
+  width: 2.5% !important;
+}
+@media screen and (max-width: 992px) {
+  .DropDownLink::before,
+  .ContactLink::before,
+  .BlogLink::before,
+  .WorkLink::before,
+  .ServicesLink::before,
+  .AboutLink::before,
+  .homeLink::before {
+    display: none;
+  }
+  .DropDownLink:hover,
+  .ContactLink:hover,
+  .BlogLink:hover,
+  .WorkLink:hover,
+  .ServicesLink:hover,
+  .AboutLink:hover,
+  .homeLink:hover {
+    color: var(--icon-color) !important;
+  }
+}
 /* header */
 .header {
   background-image: url(../images/hero-bg.jpg);

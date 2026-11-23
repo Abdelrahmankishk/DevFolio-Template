@@ -1,37 +1,39 @@
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <title>DevFolio</title>
     </head>
-    <body>
-        <nav class="navbar  fixed-top navbar-expand-lg bg-body-tertiary">
+    <body >
+        <nav  class="navbar  fixed-top navbar-expand-lg bg-body-tertiary">
             <div class="container">
-              <a class="navbar-brand" href="#">DevFolio</a>
+              <a class="navbar-brand navColor" href="#">DevFolio</a>
               <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars text-light"></i>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item ">
-                    <a class="nav-link text-uppercase ps-4" aria-current="page" href="#">Home</a>
+                  <li class="nav-item  ">
+                    <a class="nav-link homeLink text-uppercase ps-4" aria-current="page" href="#Home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-uppercase ps-4" aria-current="page" href="#">About</a>
+                    <a class="nav-link AboutLink text-uppercase ps-4" aria-current="page" href="#About-Me">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-uppercase ps-4" aria-current="page" href="#">Services</a>
+                    <a class="nav-link ServicesLink text-uppercase ps-4" aria-current="page" href="#Services">Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-uppercase ps-4" aria-current="page" href="#">work</a>
+                    <a class="nav-link WorkLink text-uppercase ps-4" aria-current="page" href="#Work">work</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link  text-uppercase ps-4" aria-current="page" href="#">Blog</a>
+                    <a class="nav-link BlogLink text-uppercase ps-4" aria-current="page" href="#Blog">Blog</a>
                   </li>
 
                   <li class="nav-item dropdown text-uppercase">
-                    <a class="nav-link dropdown-toggle ps-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link DropDownLink dropdown-toggle ps-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Drop down
                     </a>
                     <ul class="dropdown-menu">
@@ -54,13 +56,13 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-uppercase ps-4" href="#">Contact</a>
+                    <a class="nav-link ContactLink text-uppercase ps-4" href="#Contact">Contact</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
-        <header class="header vh-100 position-relative d-flex justify-content-center align-items-center">
+        <header id="Home" class="header vh-100 position-relative d-flex justify-content-center align-items-center">
             
             <div class="content text-center">
                 <h1 class="mb-4">I am Morgan Freeman</h1>
@@ -69,7 +71,7 @@
             <div class="overlay position-absolute w-100 h-100"></div>
         </header>
 
-        <section class="AboutMe">
+        <section id="About-Me" class="AboutMe">
             <div class="container py-5">
                 <div class="box shadow py-5">
                     <div class="row">
@@ -130,7 +132,7 @@
             </div>
         </section>
         
-        <section class="service py-5">
+        <section id="Services" class="service py-5">
             <div class="container">
               <div class="services-text text-center pb-5">
                 <h3 class="text-uppercase">Services</h3>
@@ -243,7 +245,7 @@
         </div>
         </section>
 
-        <section class="portfolio  py-5">
+        <section id="Work" class="portfolio  py-5">
           <div class="container">
             <div class="portfolio-text text-center pb-5">
               <h3>PORTFOLIO</h3>
@@ -386,7 +388,7 @@
           </div>
         </section>
 
-        <section class="blog py-5">
+        <section id="Blog" class="blog py-5">
           <div class="container ">
             <div class="blog-text text-center pb-5">
               <h3>BLOG</h3>
@@ -462,7 +464,7 @@
           </div>
         </section>
 
-        <section class="message  shadow">
+        <section id="Contact" class="message  shadow">
           <div class="overlay"></div>
           <div class="container position-relative p-5">
             <div class="box">
