@@ -473,7 +473,6 @@ body:has(#Blog:target) .BlogLink::before {
 .blog .card-footer a:hover {
   color: var(--icon-color);
 }
-
 /* message  */
 .message {
   padding: 125 0;
