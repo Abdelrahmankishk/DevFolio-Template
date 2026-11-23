@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
         <title>DevFolio</title>
     </head>
     <body >
-        <nav  class="navbar  fixed-top navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar  fixed-top navbar-expand-lg bg-body-tertiary">
             <div class="container">
               <a class="navbar-brand navColor" href="#">DevFolio</a>
               <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +66,10 @@
             
             <div class="content text-center">
                 <h1 class="mb-4">I am Morgan Freeman</h1>
-                <p>Developer</p>
+                <p><span id="typed"></span></h1>
+
+  <!-- Step 2: Load Typed.js from CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
             </div>
             <div class="overlay position-absolute w-100 h-100"></div>
         </header>
@@ -511,5 +514,18 @@
           </div>
         </footer>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+    const typed = new Typed('#typed', {
+      strings: [
+        'Designer',
+        'Freelancer',
+        'Photographer'
+      ],
+      typeSpeed: 100,     // typing speed in ms
+      backSpeed: 50,     // backspacing speed in ms
+      backDelay: 2000,   // pause before deleting
+      loop: true         // repeat endlessly
+    });
+  </script>
     </body>
 </html>
