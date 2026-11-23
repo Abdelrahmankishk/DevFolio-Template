@@ -10,6 +10,15 @@
   --border-color: #cde1f8;
   --icon-color: #0078ff;
 }
+.UnderLine::before {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: var(--icon-color);
+  position: absolute;
+  top: 45px;
+  left: 13px;
+}
 /* Nab-Bar */
 .bg-body-tertiary {
   background-color: rgba(0, 0, 0, 0.9) !important;
@@ -189,6 +198,17 @@ body:has(#Blog:target) .BlogLink::before {
 }
 .AboutMe .skill p {
   margin-bottom: 10;
+}
+.AboutMe .About {
+  font-size: 32px;
+}
+.AboutMe .progress {
+  border-radius: 0 !important;
+  background-color: #cde1f8;
+  height: 10px;
+}
+.AboutMe .row {
+  padding-left: 0;
 }
 /* Services */
 .service {
