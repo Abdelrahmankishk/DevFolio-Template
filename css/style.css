@@ -19,6 +19,14 @@
   top: 45px;
   left: 13px;
 }
+.SmallLine::before {
+  content: "";
+  width: 40px;
+  height: 5px;
+  background-color: var(--icon-color);
+  position: absolute;
+  translate: -50%;
+}
 /* Nab-Bar */
 .bg-body-tertiary {
   background-color: rgba(0, 0, 0, 0.9) !important;
